@@ -20,10 +20,12 @@
       position: relative;
       display: block;
       padding: $nav-link-padding;
+      font-family: $headings-font-family;
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: $nav-link-hover-bg;
+        color: $orange;
+        // background-color: $nav-link-hover-bg;
       }
     }
 
@@ -33,7 +35,7 @@
 
       &:hover,
       &:focus {
-        color: $nav-disabled-link-hover-color;
+        color: #fff;
         text-decoration: none;
         background-color: transparent;
         cursor: $cursor-disabled;

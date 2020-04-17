@@ -47,13 +47,28 @@
 						<a class="navbar-brand" href="/"><img src="<?php echo get_stylesheet_directory_uri();?>/images/logo.svg" alt="<?php echo $description; /* WPCS: xss ok. */ ?>"/></a>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="hidden-xs">
-								<a target="_blank" href="https://www.linkedin.com/company/orchard-mechanical-ltd/">
-									<img src="<?php echo get_stylesheet_directory_uri();?>/images/linkedin.png" alt="Follow us on Linkedin"/>
+						<ul class="nav navbar-nav navbar-right header_social">
+							<li>
+								<a target="_blank" href="https://www.linkedin.com/company/corramore-construction-ltd/">
+									<img src="<?php echo get_stylesheet_directory_uri();?>/images/linkedin.svg" alt="Follow us on Linkedin"/>
 								</a>
 							</li>
-							<li class="contactnumber"><a href="tel:07958 191 545">07958 191 545</a></li>
+							<li>
+								<a target="_blank" href="https://www.facebook.com/pages/category/Construction-Company/Crannymore-Construction-Ltd-2157840934534184/">
+									<img src="<?php echo get_stylesheet_directory_uri();?>/images/facebook.svg" alt="Like us on Facebook"/>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.youtube.com">
+									<img src="<?php echo get_stylesheet_directory_uri();?>/images/youtube.svg" alt="Subscribe to us on Youtube"/>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.instagram.com/crannymore_construction/">
+									<img src="<?php echo get_stylesheet_directory_uri();?>/images/instagram.svg" alt="Follow us on Instagram"/>
+								</a>
+							</li>
+							<li class="contactnumber"><a href="tel:+44 (0) 7977 766676">+44 (0) 7977 766676</a></li>
 						</ul>
 						<?php wp_nav_menu( array(
 							'theme_location' => 'menu-1',

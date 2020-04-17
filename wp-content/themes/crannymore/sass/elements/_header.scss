@@ -1,0 +1,60 @@
+.navbar-default .navbar-nav > li.menu-item-has-children a {
+  /*padding-right: 50px;*/
+}
+
+.navbar-default .navbar-nav > li.menu-item-has-children a:after {
+  content: " ";
+  color: #fff;
+  padding: 0 0 0 13px;
+  background-image: url(../images/nav_arrow_down.png);
+  background-repeat: no-repeat;
+}
+
+ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
+  @include md {
+    display: block !important;
+  }
+}
+
+header {
+  background: rgba(11, 11, 14, 1);
+  @include md {
+    position: fixed;
+    background: rgba(11, 11, 14, .9);
+  }
+  width: 100%;
+  z-index: 999999;
+
+  .header {
+    font-size: 16px;
+    &_social {
+      margin-left: 50px;
+      li > a {
+        padding: 15px 2px;
+        float: left;
+      }
+      li.contactnumber {
+        margin-left: 50px;
+        color: $orange;
+        a {
+          color: $orange;
+          font-size: 17px;
+          &:hover {
+            color: #fff;
+          }
+        }
+
+      }
+    }
+
+  }
+  .menu-primary-menu-container {
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      @include lg {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
