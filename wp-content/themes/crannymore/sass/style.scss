@@ -1,14 +1,14 @@
 /*!
-Theme Name: starter-theme
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme Name: Crannymore Construction
+Theme URI: https://www.crannymoreconstruction.co.uk/
+Author: cornellstudios.com
+Author URI: https://cornellstudios.com/
+Description: Bespoke
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: starter-theme
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: bespoke
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+// @import "navigation/navigation";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -93,17 +93,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-@import "pages/header";
+@import "elements/header";
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-@import "pages/footer";
+@import "elements/footer";
 
 /*--------------------------------------------------------------
 # Homepage
 --------------------------------------------------------------*/
 @import "pages/home";
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+@import "pages/projects";
 
 /*--------------------------------------------------------------
 # Content

@@ -1,0 +1,232 @@
+.projects_title {
+  background: url(images/portfolio-title_bg.jpg) center right no-repeat;
+  background-size: cover;
+  color: #fff;
+  h1 {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 25px 15px 25px;
+    font-size: 55px;
+    @include md {
+      font-size: 72px;
+    }
+    @include lg {
+      font-size: 92px;
+    }
+  }
+}
+
+.projects_filter {
+  padding: 50px;
+  p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1em;
+    margin-bottom: 15px;
+  }
+  .dropdown {
+    border-top: 3px solid #1F1F1F;
+    &.open {
+      .dropdown-toggle {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+
+
+  .dropdown-toggle {
+
+
+    img {
+      transition: .5s;
+      margin-left: 50px;
+    }
+    &:hover {
+      color: #EA5812;
+
+    }
+    background: #1F1F1F;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    z-index: 9999;
+  }
+  .dropdown-menu {
+    background: #43587B;
+    border-radius: 0;
+    padding: 40px 0 10px 0;
+    margin-top: -31px;
+    width: 320px;
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+.projects-loop {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 2.5px !important;
+  padding-right: 2.5px !important;
+  img {
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    width: calc(100% - 5px);
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    transition: .5s;
+    a {
+      color: #1F1F1F;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  &:hover {
+    .projects-loop__overlay {
+      display: block;
+      .vert-align {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+.projects-single {
+  padding: 25px 15px 0 !important;
+  @include md {
+    padding: 25px 45px !important;
+  }
+  h2, h3 {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  a.back {
+    background: #2C384E;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      background: #43587B;
+    }
+  }
+  &__details {
+    padding: 15px;
+    @include md {
+      padding: 0;
+    }
+    font-weight: 600;
+    background: #43587B;
+    color: #fff;
+    ul {
+      margin: 0 20px;
+      padding: 0;
+      li {
+
+      }
+    }
+  }
+  &_complete {
+    margin-bottom: 15px;
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      opacity: .5;
+      font-weight: 600;
+    }
+  }
+  &_gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    img {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      opacity: .5;
+      font-weight: 600;
+    }
+  }
+}
+
+.discuss {
+  background: url(images/discuss_bg.jpg) #EA5812 no-repeat center right;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 15px !important;
+  @include md {
+    padding: 20px 45px !important;
+  }
+  h4 {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: .9em;
+    @include md {
+      font-size: 50px;
+    }
+    @include lg {
+      font-size: 80px;
+      border-right: 3px solid #fff;
+    }
+    span {
+      font-weight: 300;
+      display: block;
+    }
+  }
+  &_content {
+    @include md {
+      text-align: right;
+    }
+
+  }
+  p {
+    font-weight: 600;
+    text-shadow: 0px 0px 15px #000;
+    &:first-of-type {
+      font-size: 22px;
+      @include md {
+        font-size: 30px;
+      }
+
+    }
+  }
+  a {
+    background: #2C384E;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      background: #43587B;
+    }
+  }
+}

@@ -30,6 +30,23 @@ figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
+.no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.site-content {
+	@include md {
+		padding-top: 100px;
+	}
+}
+
 .vert-align {
 	position: absolute;
 	text-align: center;
