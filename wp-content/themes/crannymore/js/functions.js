@@ -2,14 +2,30 @@
 
   // bxslider
   $('.bxslider').bxSlider({
-
+    infiniteLoop: true,
+    touchEnabled: false,
+    controls: false,
    });
+
+   $('.clientsslider').bxSlider({
+     slideWidth: 300,
+     minSlides: 2,
+     maxSlides: 50,
+     slideMargin: 10,
+     pager: false,
+     infiniteLoop: true,
+     controls: true,
+     touchEnabled: false,
+    });
+
+
 
   /**
    * Match Height (Including Safari onload fix)
    */
   function startMatchHeight() {
     $('.matchheight').matchHeight();
+    $('.headmatch').matchHeight();
   }
   window.onload = startMatchHeight;
 

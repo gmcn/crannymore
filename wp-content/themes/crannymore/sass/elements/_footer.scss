@@ -26,23 +26,30 @@ footer {
       }
     }
     &-contact {
-      font-size: 25px;
+      font-size: 20px;
       a.email {
         font-size: 20px;
       }
     }
   }
   .copyright {
+    font-size: 12px;
+    a {
+      padding: 0 0 0 25px;
+    }
     @include md {
       text-align: right;
     }
     span {
+      font-size: 13px;
       display: block;
       margin-top: 90px;
       font-family: 'Montserrat', sans-serif;
       color: #FFB01A;
       a {
         color: #FFB01A;
+        padding: 0;
+        font-weight: 700;
         &:hover {
           color: #fff;
         }

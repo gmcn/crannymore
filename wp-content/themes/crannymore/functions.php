@@ -208,6 +208,7 @@ echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_
 add_action('login_head', 'my_custom_login');
 
 include(get_template_directory() . '/functions/projects.php' );
+include(get_template_directory() . '/functions/blocks.php' );
 
 // SVG support for remove_featured_image
 function cc_mime_types($mimes) {
@@ -215,6 +216,9 @@ function cc_mime_types($mimes) {
  return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+add_image_size( 'custom-small', 400, 400, array( 'center', 'center' ) ); // Hard crop center center
+add_image_size( 'custom-medium', 600, 499, array( 'center', 'center' ) ); // Hard crop center center
 
 // Move Yoast to bottom
 function yoasttobottom() {

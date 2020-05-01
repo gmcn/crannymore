@@ -1,0 +1,240 @@
+.services_title {
+  background: url(images/services-title_bg.jpg) center right no-repeat;
+  background-size: cover;
+  color: #fff;
+  h1 {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 25px 15px 25px;
+    font-size: 55px;
+    letter-spacing: 2px;
+    @include md {
+      font-size: 72px;
+      letter-spacing: 3px;
+    }
+    @include lg {
+      font-size: 92px;
+      letter-spacing: 5px;
+    }
+  }
+}
+.services-parent {
+  padding-right: 45px !important;
+  padding-left: 45px !important;
+  .child-page {
+    margin-bottom: 25px;
+    &:hover {
+      .more {
+        background: $orange;
+
+      }
+    }
+    &__wrap {
+      padding-top: 15px;
+      background: #8D2046;
+    }
+    h2 {
+      font-size: 22px;
+      @include md {
+        font-size: 18px;
+      }
+      @include lg {
+        font-size: 22px;
+      }
+      font-family: $font-family-sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 25px;
+      transition: .5s;
+    }
+    .more {
+      width: 50%;
+      @include md {
+        width: 30%;
+      }
+      padding: 15px 0 0 0;
+      margin: 0 auto;
+      background: #5A182D;
+      position: relative;
+      z-index: 1;
+      border-radius: 0 0 90px 90px;
+      transition: .5s;
+      p {
+        font-size: 12px;
+        opacity: .5;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+    }
+    .wp-post-image {
+      margin-top: -75px;
+      @include md {
+        margin-top: -100px;
+      }
+      position: relative;
+      z-index: 0;
+    }
+    a {
+      color: #fff;
+    }
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.services-single {
+  background: #8D2046;
+  color: #fff;
+  padding: 25px 15px 0 !important;
+  @include md {
+    padding: 25px 45px !important;
+  }
+  h2, h3 {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  a.back {
+    background: #410B1E;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      background: #fff;
+      color: #8D2046;
+    }
+  }
+  &__details {
+    padding: 15px;
+    @include md {
+      padding: 0;
+    }
+    font-weight: 600;
+    background: #fff;
+    color: #8D2046;
+    a {
+      background: #8D2046;
+      color: #fff;
+      padding: 10px 30px;
+      margin-top: 10px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+  &_complete {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  &_gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    img.enlarge {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      height: 38px;
+      width: 38px;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      opacity: .5;
+      font-weight: 600;
+    }
+  }
+  .child-page {
+    margin-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover {
+      .more {
+        background: $orange;
+      }
+    }
+    &__wrap {
+      padding-top: 15px;
+      background: #8D2046;
+    }
+    h2 {
+      &::after {
+        width: 100%;
+        height: 3px;
+        background: #5A182D;
+        content: " ";
+        margin-top: 15px;
+        display: block;
+      }
+      font-size: 22px;
+      @include md {
+        font-size: 18px;
+      }
+      @include lg {
+        font-size: 22px;
+      }
+      font-family: $font-family-sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      transition: .5s;
+    }
+    .more {
+      width: 50%;
+      @include md {
+        width: 75%;
+      }
+      @include lg {
+        width: 50%;
+      }
+      padding: 10px 0 0 0;
+      margin: 0 auto;
+      background: #5A182D;
+      position: relative;
+      z-index: 1;
+      border-radius: 0 0 90px 90px;
+      transition: .5s;
+      p {
+        opacity: .5;
+        padding: 0 5px;
+        font-size: 11px;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 25px;
+      }
+    }
+    .wp-post-image {
+      margin-top: -75px;
+      @include md {
+        margin-top: -100px;
+      }
+      position: relative;
+      z-index: 0;
+    }
+    a {
+      color: #fff;
+    }
+    color: #fff;
+    text-align: center;
+  }
+}

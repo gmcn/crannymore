@@ -59,6 +59,31 @@ figure {
 	transform: translateY(-50%);
 }
 
+.paginate {
+  border-top: 3px solid #2C384E;
+  display: inline-block;
+	padding-left: 0 !important;
+  margin: 22px 0;
+	&_wrap {
+		background: #2C384E;
+		padding: 10px;
+		color: #fff;
+		display: inline-block;
+		a {
+			color: #fff;
+		}
+		.current {
+			font-weight: 700;
+		}
+		.page-numbers {
+			padding: 3px 0 3px 5px;
+		}
+		a.next, a.prev {
+			border: none;
+		}
+	}
+}
+
 @import "tables";
 
 @import "cookies";

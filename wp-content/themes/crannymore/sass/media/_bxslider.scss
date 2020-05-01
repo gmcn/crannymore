@@ -4,11 +4,13 @@
 ===================================*/
 .bx-wrapper {
   position: relative;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   padding: 0;
   *zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .bx-wrapper img {
   max-width: 100%;
@@ -30,16 +32,16 @@ ul.bxslider {
 /** THEME
 ===================================*/
 .bx-wrapper {
-  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
-  box-shadow: 0 0 5px #ccc;
-  border: 5px solid #fff;
-  background: #fff;
+  // -moz-box-shadow: 0 0 5px #ccc;
+  // -webkit-box-shadow: 0 0 5px #ccc;
+  // box-shadow: 0 0 5px #ccc;
+  // border: 5px solid #fff;
+  // background: #fff;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: -30px;
+  bottom: 30px;
   width: 100%;
 }
 /* LOADER */
@@ -63,21 +65,24 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
-  text-indent: -9999px;
-  display: block;
-  width: 10px;
-  height: 10px;
+  // background: #666;
+  // text-indent: -9999px;
+  // display: block;
+  // width: 10px;
+  // height: 10px;
   margin: 0 5px;
-  outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  color: #fff;
+  font-family: 'Viga', sans-serif;
+  // outline: 0;
+  // -moz-border-radius: 5px;
+  // -webkit-border-radius: 5px;
+  // border-radius: 5px;
+  font-size: 35px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  color: $orange
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -87,12 +92,12 @@ ul.bxslider {
   *display: inline;
 }
 .bx-wrapper .bx-pager-item {
-  font-size: 0;
+  // font-size: 0;
   line-height: 0;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 10px;
+  // left: 10px;
   background: url('images/controls.png') no-repeat 0 -32px;
 }
 .bx-wrapper .bx-prev:hover,

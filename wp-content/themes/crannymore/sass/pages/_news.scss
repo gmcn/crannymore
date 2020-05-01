@@ -1,0 +1,275 @@
+.news_title {
+  background: url(images/news-title_bg.jpg) center right no-repeat;
+  background-size: cover;
+  color: #fff;
+  h1 {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 25px 15px 25px;
+    font-size: 55px;
+    letter-spacing: 2px;
+    @include md {
+      font-size: 72px;
+      letter-spacing: 3px;
+    }
+    @include lg {
+      font-size: 92px;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.news_filter {
+  // padding: 50px;
+  padding: 50px 15px 50px 45px !important;
+  h2 {
+    margin-top: 0;
+    font-size: 56px;
+    text-transform: uppercase;
+  }
+  p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1em;
+    margin-bottom: 15px;
+  }
+  .dropdown {
+    border-top: 3px solid #1F1F1F;
+    &.open {
+      .dropdown-toggle {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+
+
+  .dropdown-toggle {
+
+
+    img {
+      transition: .5s;
+      margin-left: 50px;
+    }
+    &:hover {
+      color: #EA5812;
+
+    }
+    background: #1F1F1F;
+    color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    z-index: 9999;
+  }
+  .dropdown-menu {
+    background: #2C616E;
+    border-radius: 0;
+    padding: 40px 0 10px 0;
+    margin-top: -31px;
+    width: 320px;
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+.news-loop {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 2.5px !important;
+  padding-right: 2.5px !important;
+  &__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    color: #1F1F1F;
+    background: #fff;
+  }
+  &__more {
+    position: absolute;
+    font-size: 14px;
+    bottom: 0;
+    left: 2.5px;
+    padding: 10px 15px;
+    color: #fff;
+    background: #1F1F1F;
+  }
+  h2 {
+    background: #fff;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    transition: .5s;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .vert-align {
+    width: 100%;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+}
+
+.news-loop:hover {
+
+  h2 {
+    background: $orange;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+}
+
+.news-single {
+  padding: 25px 15px 0 !important;
+  @include md {
+    padding: 25px 45px !important;
+  }
+  h2, h3 {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  a.back {
+    background: #2C616E;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      background: #43587B;
+    }
+  }
+  &__details {
+    padding: 15px;
+    @include md {
+      padding: 0;
+    }
+    font-weight: 600;
+    background: #2C616E;
+    color: #fff;
+    ul {
+      margin: 0 20px;
+      padding: 0;
+      li {
+
+      }
+    }
+  }
+  &_complete {
+    margin-bottom: 15px;
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      opacity: .5;
+      font-weight: 600;
+    }
+  }
+  &_gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    img.enlarge {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      height: 38px;
+      width: 38px;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+      opacity: .5;
+      font-weight: 600;
+    }
+  }
+}
+
+.discuss {
+  background: url(images/discuss_bg.jpg) #EA5812 no-repeat center right;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 15px !important;
+  @include md {
+    padding: 20px 45px !important;
+  }
+  h4 {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: .9em;
+
+    @include md {
+      font-size: 50px;
+    }
+    @include lg {
+      font-size: 80px;
+      border-right: 3px solid #fff;
+      word-wrap: break-word;
+    }
+    span {
+      font-weight: 300;
+      display: block;
+    }
+  }
+  &_content {
+    @include md {
+      text-align: right;
+    }
+
+  }
+  p {
+    font-weight: 600;
+    text-shadow: 0px 0px 15px #000;
+    &:first-of-type {
+      font-size: 22px;
+      @include md {
+        font-size: 30px;
+      }
+
+    }
+  }
+  a {
+    background: #2C384E;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      background: #43587B;
+    }
+  }
+}

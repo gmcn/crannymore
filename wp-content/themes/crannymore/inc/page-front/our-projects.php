@@ -29,15 +29,14 @@
     			<!-- <div class="row"> -->
 
             <?php while ( $projects->have_posts() ) :  $projects->the_post(); ?>
-              <div class="col-sm-6 col-md-3 projects-loop">
+              <div class="col-sm-6 col-md-6 col-lg-3 projects-loop">
       					<a href="<?php echo the_permalink() ?>">
-      						<?php echo get_the_post_thumbnail(); ?>
+                  <?php echo the_post_thumbnail('custom-small'); ?>
                   <div class="projects-loop__overlay">
                     <div class="vert-align">
-                      <?php //echo the_title(); ?>
-                      Read More
+                      <?php echo the_title(); ?>
                     </div>
-
+                    <p class="more">Read More</p>
                   </div>
 
       					</a>
@@ -50,7 +49,7 @@
           <!-- </div> -->
         <!-- </div> -->
 
-        <a class="more" href="/about">View All Projects</a>
+        <a class="more" href="/projects">View All Projects</a>
       </div>
     </div>
   </div>
